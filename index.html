@@ -1,60 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <style>
-    body{
-      background-color: lightgray;
-    }
-    header{
-      background-color: white;
-    }
-  </style>
-  <title>Fictional Storefront</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <script src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Website</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <header>
-    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque soluta quia molestiae labore provident nisi delectus quidem totam rerum expedita recusandae officia quas deserunt, sint ex molestias sapiente reprehenderit vel.</h1>
-    <h1>Welcome to Fictional Storefront</h1>
     <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#cart">Cart</a></li>
-      </ul>
+      <a href="#" class="nav-link">Home</a>
+      <a href="#" class="nav-link">Store</a>
+      <a href="#" class="nav-link">Our Team</a>
     </nav>
   </header>
 
-  <section id="home">
-    <h2>Welcome to Fictional Storefront</h2>
-    <p>Explore our wide range of products and find your favorites!</p>
-  </section>
+  <main>
+    <div class="rectangle"></div>
 
-  <section id="products">
-    <h2>Products</h2>
-    <div class="product">
-      <img src="product1.jpg" alt="Product 1">
-      <h3>Product 1</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <button onclick="addToCart('Product 1')">Add to Cart</button>
+    <div class="content">
+      <div class="content-item">
+        <img src="/assets/gettyimages522385700612x612Rem.png" alt="Image">
+      </div>
+      <div class="content-item">
+        <div class="text-block">
+          A Red Dress<br>
+          Will Brighten<br>
+          Your Evening
+        </div>
+      </div>
+      <div class="content-item">
+        <div class="highlight">100K</div>
+      </div>
+      <div class="content-item">
+        <div class="highlight-small">Limited Offer</div>
+      </div>
+      <div class="content-item">
+        <div class="rectangle-small"></div>
+      </div>
+      <div class="content-item">
+        <div class="highlight-small">Buy Now</div>
+      </div>
     </div>
-    <div class="product">
-      <img src="product2.jpg" alt="Product 2">
-      <h3>Product 2</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <button onclick="addToCart('Product 2')">Add to Cart</button>
-    </div>
-  </section>
 
-  <section id="cart">
-    <h2>Cart</h2>
-    <div id="cartItems"></div>
-    <button onclick="checkout()">Checkout</button>
-  </section>
+    <div class="rectangle"></div>
 
-  <footer>
-    <p>&copy; 2023 Fictional Storefront. All rights reserved.</p>
-  </footer>
+    <footer class="footer">
+      &copy; 2023 By Team Name For Revolution<br>
+      Maju Jaya Store
+    </footer>
+  </main>
 </body>
+
 </html>
