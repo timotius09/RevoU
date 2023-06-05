@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Roboto:400|Glass+Antiqua:400");
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            font-family: "Roboto", sans-serif;
+            background-color: #ffffff;
+        }
+
+        .landing-page {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        header {
+            background-color: #000000;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navbar-nav {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-item {
+            margin-right: 20px;
+        }
+
+        .nav-link {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .banner {
+            position: relative;
+            width: 100%;
+        }
+
+        .banner-image {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .banner-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #ffffff;
+            font-family: "Glass Antiqua", cursive;
+            font-size: 2.5rem;
+            text-align: center;
+            line-height: 1.5;
+            white-space: nowrap;
+        }
+
+        .banner-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .buy-now {
+            color: #fff;
+            font-family: 'Glass Antiqua', sans-serif;
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 1.2;
+            background-color: #b3261e;
+            padding: 1rem;
+            width: max-content;
+            align-self: flex-start;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .buy-now:hover {
+            background-color: #8e1c18;
+        }
+
+        .limited-offer,
+        .buy-now {
+            color: #ffffff;
+            font-family: "Glass Antiqua", cursive;
+            font-size: 2rem;
+            text-align: center;
+            line-height: 1.5;
+            white-space: nowrap;
+        }
+
+        footer {
+            background-color: #000000;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .footer-text {
+            color: #ffffff;
+            font-size: 12px;
+            text-align: center;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .banner-text {
+                font-size: 1.5rem;
+            }
+
+            .limited-offer,
+            .buy-now {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="landing-page">
+        <header>
+            <nav class="navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Our Team</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="banner">
+                <img class="banner-image" src="" alt="">
+                <h1 class="banner-text">A RED DRESS WILL BRIGHTEN YOUR EVENING</h1>
+                <div class="banner-overlay">
+                    <div class="limited-offer">Limited Offer!</div>
+                    <div class="buy-now">Buy Now!</div>
+                </div>
+            </div>
+            <footer>
+                <p class="footer-text">Copyright 2023 by
+                    &lt;&lt; team name &gt;&gt; for RevoU Kampus Merdeka</p>
+            </footer>
+        </main>
+    </div>
+</body>
+
+</html>
