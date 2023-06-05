@@ -2,161 +2,140 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-    <style>
-        @import url("https://fonts.googleapis.com/css?family=Roboto:400|Glass+Antiqua:400");
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Website</title>
+  <!-- <link rel="stylesheet" href="css/styles.css"> -->
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
 
-        /* Global styles */
-        body {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background-color: #000000;
-        }
+    header {
+      padding: 20px;
+      background-color: #111;
+      text-align: center;
+    }
 
-        /* Container styles */
-        .landing-page {
-            align-items: flex-start;
-            background-color: #000000;
-            border: none;
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-            width: 100vw;
-        }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
 
-        /* Header styles */
-        .header {
-            background-color: #000000;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1.5rem;
-        }
+    .nav-link {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-        .logo {
-            color: #fff;
-            font-family: 'Roboto', sans-serif;
-            font-size: 1.5rem;
-        }
+    main {
+      padding: 20px;
+    }
 
-        .navigation {
-            display: flex;
-            gap: 1rem;
-        }
+    .rectangle {
+      height: 20px;
+      background-color: #111;
+    }
 
-        .navigation a {
-            color: #fff;
-            font-family: 'Roboto', sans-serif;
-            text-decoration: none;
-            font-size: 1rem;
-        }
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+    }
 
-        /* Main content styles */
-        .main-content {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1rem;
-            padding: 1.5rem;
-            color: #fff;
-        }
+    .content-item {
+      top:0;
+      flex-basis: 100%;
+      text-align: center;
+    }
 
-        .image {
-            width: 100%;
-            height: auto;
-        }
+    .text-block {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
 
-        .text-content {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
+    .highlight {
+      font-size: 48px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
 
-        .title {
-            color: #ffffff;
-            font-family: 'Glass Antiqua', sans-serif;
-            font-size: 2.5rem;
-            font-weight: 400;
-            line-height: 1.2;
-            margin-bottom: 1rem;
-        }
+    .highlight-small {
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
 
-        .offer {
-            color: #ffffff;
-            font-family: 'Glass Antiqua', sans-serif;
-            font-size: 2rem;
-            font-weight: 400;
-            line-height: 1.2;
-            margin-bottom: 1rem;
-        }
+    .rectangle-small {
+      height: 10px;
+      width: 100px;
+      background-color: #fff;
+      margin: 20px auto;
+    }
 
-        .buy-now {
-            color: #ffffff;
-            font-family: 'Glass Antiqua', sans-serif;
-            font-size: 2rem;
-            font-weight: 400;
-            line-height: 1.2;
-            background-color: #b3261e;
-            padding: 1rem;
-            width: max-content;
-            align-self: flex-start;
-            text-align: center;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .buy-now:hover {
-            background-color: #8e1c18;
-        }
-
-        /* Footer styles */
-        .footer {
-            background-color: #000000;
-            color: #fff;
-            padding: 1rem;
-            text-align: center;
-        }
-
-        /* Responsive styles */
-        @media (max-width: 768px) {
-            .main-content {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #111;
+      font-size: 14px;
+    }
+  </style>
 </head>
 
 <body>
-    <div class="landing-page">
-        <!-- Header -->
-        <header class="header">
-            <h1 class="logo">Maju Jaya Store</h1>
-            <nav class="navigation">
-            <a href="Home.html" class="nav-link">Home</a>
-            <a href="Store.html" class="nav-link">Store</a>
-            <a href="About.html" class="nav-link">About</a>
-            <a href="Contact.html" class="nav-link">Contact</a>
-            </nav>
-        </header>
+  <header>
+    <nav>
+      <a href="Home.html" class="nav-link">Home</a>
+      <a href="Store.html" class="nav-link">Store</a>
+      <a href="About.html" class="nav-link">About</a>
+      <a href="Contact.html" class="nav-link">Contact</a>
+    </nav>
+  </header>
 
-        <!-- Main Content -->
-        <section class="main-content">
-            <img class="image" src="" alt="Red Dress">
-            <div class="text-content">
-                <h2 class="title">A Red Dress Will Brighten Your Evening</h2>
-                <p class="offer">Limited Offer!</p>
-                <div class="buy-now">Buy Now!</div>
-            </div>
-        </section>
+  <main>
+    <div class="rectangle"></div>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <p>&copy; 2023 by &lt;&lt; team name &gt;&gt; for RevoU Kampus Merdeka</p>
-        </footer>
+    <div class="content">
+      <div class="content-item">
+        <img src="img/ilustrasi.png" height="664" alt="Image">
+      </div>
+      <div class="content-item">
+        <div class="text-block">
+          A Red Dress<br>
+          Will Brighten<br>
+          Your Evening
+        </div>
+      </div>
+      <div class="content-item">
+        <div class="highlight">100K</div>
+      </div>
+      <div class="content-item">
+        <div class="highlight-small">Limited Offer</div>
+      </div>
+      <div class="content-item">
+        <div class="rectangle-small"></div>
+      </div>
+      <div class="content-item">
+        <div class="highlight-small">Buy Now</div>
+      </div>
     </div>
+
+    <div class="rectangle"></div>
+
+    <footer class="footer">
+      &copy; 2023 By Team Name For Revolution<br>
+      Maju Jaya Store
+    </footer>
+  </main>
 </body>
 
 </html>
