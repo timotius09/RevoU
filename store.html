@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Landing Page</title>
     <style>
         @import url("https://fonts.googleapis.com/css?family=Roboto:400|Glass+Antiqua:400");
 
@@ -14,13 +14,13 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            /* background-color: #000000; */
+            background-color: #000000;
         }
 
         /* Container styles */
         .landing-page {
             align-items: flex-start;
-            background-color: #ffffff;
+            background-color: #000000;
             border: none;
             display: flex;
             flex-direction: column;
@@ -61,6 +61,7 @@
             grid-template-columns: repeat(2, 1fr);
             gap: 1rem;
             padding: 1.5rem;
+            color: #fff;
         }
 
         .image {
@@ -75,7 +76,7 @@
         }
 
         .title {
-            color: #1d192b;
+            color: #ffffff;
             font-family: 'Glass Antiqua', sans-serif;
             font-size: 2.5rem;
             font-weight: 400;
@@ -84,7 +85,7 @@
         }
 
         .offer {
-            color: #1d192b;
+            color: #ffffff;
             font-family: 'Glass Antiqua', sans-serif;
             font-size: 2rem;
             font-weight: 400;
@@ -93,7 +94,7 @@
         }
 
         .buy-now {
-            color: #fff;
+            color: #ffffff;
             font-family: 'Glass Antiqua', sans-serif;
             font-size: 2rem;
             font-weight: 400;
@@ -134,9 +135,10 @@
         <header class="header">
             <h1 class="logo">Maju Jaya Store</h1>
             <nav class="navigation">
-                <a href="#">Home</a>
-                <a href="#">Store</a>
-                <a href="#">Our Team</a>
+            <a href="Home.html" class="nav-link">Home</a>
+            <a href="Store.html" class="nav-link">Store</a>
+            <a href="About.html" class="nav-link">About</a>
+            <a href="Contact.html" class="nav-link">Contact</a>
             </nav>
         </header>
 
