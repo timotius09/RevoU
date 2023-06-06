@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head> 
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fictional Storefront</title>
     <style>
         @import url("https://fonts.googleapis.com/css?family=Roboto:400|Glass+Antiqua:400");
 
@@ -23,6 +23,7 @@
         body {
             font-family: "Roboto", sans-serif;
             background-color: #000000;
+            color: #ffffff;
         }
 
         .landing-page {
@@ -59,7 +60,7 @@
             text-decoration: none;
         }
 
-        .main {
+        main {
             flex: 1;
             display: flex;
             flex-direction: column;
@@ -83,7 +84,6 @@
             top: 4vh;
             left: 50%;
             transform: translate(-50%, -50%);
-            color: #ffffff;
             font-family: "Glass Antiqua", cursive;
             font-size: 2.5rem;
             text-align: center;
@@ -103,19 +103,24 @@
             justify-content: center;
         }
 
+        .limited-offer,
         .buy-now {
-            color: #ffffff;
-            font-family: 'Glass Antiqua', sans-serif;
+            font-family: "Glass Antiqua", cursive;
             font-size: 2rem;
-            font-weight: 400;
-            line-height: 1.2;
+            text-align: center;
+            line-height: 1.5;
+            white-space: nowrap;
+        }
+
+        .buy-now {
             background-color: #b3261e;
+            color: #ffffff;
+            font-weight: 400;
             padding: 0.5rem;
             margin-top: 29px;
             width: max-content;
             align-self: center;
             border-radius: 12px;
-            text-align: center;
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
@@ -123,19 +128,11 @@
         .buy-now:hover {
             background-color: #8e1c18;
         }
- .limited-offer{
-    background-color: maroon;
-    border-radius: 8px;
-    padding: 3px 5px;
- }
-        .limited-offer,
-        .buy-now {
-            color: #ffffff;
-            font-family: "Glass Antiqua", cursive;
-            font-size: 2rem;
-            text-align: center;
-            line-height: 1.5;
-            white-space: nowrap;
+
+        .limited-offer {
+            background-color: maroon;
+            border-radius: 8px;
+            padding: 3px 5px;
         }
 
         footer {
@@ -145,7 +142,6 @@
         }
 
         .footer-text {
-            color: #ffffff;
             font-size: 12px;
             text-align: center;
         }
@@ -162,31 +158,6 @@
             }
         }
     </style>
-
-  <style>
-    body{
-      background-color: lightgray;
-    }
-    header{
-      background-color: white;
-    }
-  </style> 
-  <title>Fictional Storefront</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <script src="script.js"></script>
- 
-<head>
-  <style>
-    body{
-      background-color: lightgray;
-    }
-    header{
-      background-color: white;
-    }
-  </style>
-  <title>Fictional Storefront</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <script src="script.js"></script>
 </head>
 
 <body>
@@ -194,35 +165,35 @@
         <header>
             <nav class="navbar">
                 <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="Store.html" class="nav-link">Store</a>
-                </li>
-                <li class="nav-item">
-                    <a href="About.html" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="Contact.html" class="nav-link">Contact</a>
-                </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Store.html" class="nav-link">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="About.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Contact.html" class="nav-link">Contact</a>
+                    </li>
                 </ul>
             </nav>
         </header>
         <main>
-            <div class="banner">
+            <section class="banner">
                 <img class="banner-image" src="img/ilustrasi.png" alt="">
                 <h1 class="banner-text">A RED DRESS WILL BRIGHTEN YOUR EVENING</h1>
                 <div class="banner-overlay">
                     <div class="limited-offer">Limited Offer!</div>
                     <div class="buy-now">Buy Now!</div>
                 </div>
-            </div>
-            <footer>
-                <p class="footer-text">Copyright 2023 by
-                    &lt;&lt; team name &gt;&gt; for RevoU Kampus Merdeka</p>
-            </footer>
+            </section>
         </main>
+        <footer>
+            <p class="footer-text">Copyright 2023
+                by &lt;&lt; team name &gt;&gt; for RevoU Kampus Merdeka</p>
+        </footer>
     </div>
 </body>
 
