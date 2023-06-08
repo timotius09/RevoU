@@ -19,17 +19,14 @@
         }
 
         .landing-page {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            height: 100vh;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            min-height: 100vh;
         }
 
         header {
             background-color: #111;
             padding: 20px;
-            width: 100%;
             text-align: center;
         }
 
@@ -53,12 +50,13 @@
             color: #fff;
             text-decoration: none;
         }
-      .nav-item .nav-link:hover {
+
+        .nav-item .nav-link:hover {
             color: #b3261e;
-         font-weight: 600;
+            font-weight: 600;
         }
+
         .main {
-            flex: 1;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -117,7 +115,6 @@
             cursor: pointer;
             transition: background-color 0.3s ease;
             margin-top: 26vmax;
-       
         }
 
         .buy-now:hover {
@@ -150,8 +147,8 @@
                     </li>
                     <li class="nav-item">
                         <a href="Contact.html" class="nav-link">Contact</a>
-                    </li> 
- <li class="nav-item">
+                    </li>
+                    <li class="nav-item">
                         <a href="index-New.html" class="nav-link">Update</a>
                     </li>
                 </ul>
@@ -159,7 +156,7 @@
         </header>
         <main class="main">
             <div class="banner">
-                <img class="banner-image" src="img\ilustrasi.png"    alt="Banner Image">
+                <img class="banner-image" src="img\ilustrasi.png" alt="Banner Image">
                 <div class="banner-overlay">
                     <h1 class="banner-text">Welcome to our Store</h1>
                     <a href="#" class="buy-now">Buy Now</a>
