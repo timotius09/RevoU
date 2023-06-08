@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fictional Storefront</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
     <style>
         @import url("https://fonts.googleapis.com/css?family=Roboto:400|Glass+Antiqua:400");
 
@@ -37,26 +38,6 @@
             padding: 20px;
         }
 
-        .navbar {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .navbar-nav {
-            display: flex;
-            list-style: none;
-        }
-
-        .nav-item {
-            margin-right: 20px;
-        }
-
-        .nav-link {
-            color: #ffffff;
-            text-decoration: none;
-        }
-
         main {
             display: flex;
             flex-direction: column;
@@ -67,6 +48,8 @@
         .banner {
             position: relative;
             width: 100%;
+            display: grid;
+            place-items: center;
         }
 
         .banner-image {
@@ -76,27 +59,11 @@
         }
 
         .banner-text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
             font-family: "Glass Antiqua", cursive;
             font-size: 2.5rem;
             text-align: center;
             line-height: 1.5;
             white-space: nowrap;
-        }
-
-        .banner-overlay {
-            position: absolute;
-            top: 50%;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
         }
 
         .limited-offer,
@@ -129,6 +96,7 @@
             background-color: maroon;
             border-radius: 8px;
             padding: 3px 5px;
+            margin-top: 20px;
         }
 
         footer {
@@ -140,52 +108,48 @@
             font-size: 12px;
             text-align: center;
         }
-
-        /* Responsiveness */
-        @media (max-width: 768px) {
-            .banner-text {
-                font-size: 1.5rem;
-            }
-
-            .limited-offer,
-            .buy-now {
-                font-size: 1.5rem;
-            }
-        }
     </style>
 </head>
 
 <body>
     <div class="landing-page">
         <header>
-            <nav class="navbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="stores.html" class="nav-link">Store</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="About.html" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="Contact.html" class="nav-link">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="index-New.html" class="nav-link">Update</a>
-                    </li>
-                </ul>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">Maju Jaya Store</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="stores.html" class="nav-link">Store</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="About.html" class="nav-link">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="Contact.html" class="nav-link">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="index-New.html" class="nav-link">Update</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </header>
         <main>
             <section class="banner">
                 <img class="banner-image" src="img/ilustrasi.png" alt="">
-                <div class="banner-overlay">
-                    <h1 class="banner-text">A RED DRESS WILL BRIGHTEN YOUR EVENING</h1>
-                    <div class="limited-offer">Limited Offer!</div>
-                    <div class="buy-now">Buy Now!</div>
-                </div>
+                <div class="banner-text">A RED DRESS WILL BRIGHTEN YOUR EVENING</div>
+                <div class="limited-offer">Limited Offer!</div>
+                <div class="buy-now">Buy Now!</div>
             </section>
         </main>
         <footer>
@@ -193,6 +157,7 @@
                 by &lt;&lt; team name &gt;&gt; for RevoU Kampus Merdeka</p>
         </footer>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
