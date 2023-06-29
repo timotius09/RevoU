@@ -39,7 +39,20 @@
         input:valid {
             border-color: #45feaf;
             animation: none;
+        } 
+        section .container,ol {
+            border: 0.4px solid lightgrey;
+            padding: 12px;
+            margin: 12px;
         }
+#input{
+    border-radius: 5px;
+    padding: 8px 18px;
+    border: 1px solid grey;
+}
+#input:hover{
+    background-color: orange;
+}        
     </style>
 </head>
 
@@ -49,5 +62,44 @@
         <input type="text" name="teks" id="name" required>
     <button type="submit" value="submit">submits</button>
     </form>
+    <footer>
+        <section>
+            <main>
+                <header>
+                    <div class="container">
+                    <h3>lorems</h3>
+                    <p id="parafAwal">lorems impsum</p>
+                    <small id="teksAwal">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, nostrum! Culpa unde error id fugiat at porro dignissimos quam quibusdam ut fugit velit sunt impedit, sapiente harum ducimus modi cum, 
+                        <span id="deskripsi class="teksDua"Awal">By, Author</span>
+                    </small>
+                    </div>
+                    <div class="container">
+                     <button  id="input">Submit</button>
+                    </div>
+                </header>
+            </main>
+            <main>
+                <header>
+                    <div class="container">
+                    <h3 class="teksDua">lorems</h3>
+                    <p class="teksDua">lorems impsum</p>
+                    <small> class="teksDua"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, nostrum! Culpa unde error id fugiat at porro dignissimos quam quibusdam ut fugit velit sunt impedit, sapiente harum ducimus modi cum, 
+                        <span class="teksDua">By, Author</span>
+                    </small>
+                    </div>
+                    <div class="container">
+                        <ol>
+                            <li class="list-Item">pertama</li>
+                            <li class="list-Item">kedua</li>
+                            <li class="list-Item">ketiga</li>
+                        </ol>
+                    </div>
+                </header>
+            </main>
+        </section>
+    </footer>
+    <script>
+
+    </script>
 </body>
 </html>
