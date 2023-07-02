@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Website</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      padding: 20px;
+      background-color: #111;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .nav-link {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    .rectangle {
+      height: 20px;
+      background-color: #111;
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .content-item {
+      text-align: center;
+    }
+
+    .text-block {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    .highlight {
+      font-size: 48px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    .highlight-small {
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    .rectangle-small {
+      height: 10px;
+      width: 100px;
+      background-color: #fff;
+      margin: 20px auto;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #111;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="stores.html" class="nav-link">Store</a>
+      <a href="About.html" class="nav-link">About</a>
+      <a href="Contact.html" class="nav-link">Contact</a>
+      <a href="index-New.html" class="nav-link">Update</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="rectangle"></div>
+
+    <div class="content">
+      <div class="content-item">
+        <img src="img/ilustrasi.png" height="664" alt="Image">
+      </div>
+      <div class="content-item">
+        <div class="text-block">
+          A Red Dress<br>
+          Will Brighten<br>
+          Your Evening
+        </div>
+      </div>
+      <div class="content-item">
+        <div class="highlight">100K</div>
+      </div>
+      <div class="content-item">
+        <div class="highlight-small">Limited Offer</div>
+      </div>
+      <div class="content-item">
+        <div class="rectangle-small"></div>
+      </div>
+      <div class="content-item">
+        <div class="highlight-small">Buy Now</div>
+      </div>
+    </div>
+
+    <div class="rectangle"></div>
+
+    <footer class="footer">
+      &copy; 2023 By Team Name For Revolution<br>
+      Maju Jaya Store
+    </footer>
+  </main>
+</body>
+
+</html>

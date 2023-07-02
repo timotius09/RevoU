@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Roboto:400|Glass+Antiqua:400");
+
+
+        /* Global styles */
+        body {
+
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #000000;
+        }
+
+        /* Container styles */
+        .landing-page {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            min-height: 100vh;
+            background-color: #000000;
+            color: #fff;
+        }
+
+        /* Header styles */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem;
+            background-color: #000000;
+        }
+
+        .logo {
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.5rem;
+        }
+
+        .navigation {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .navigation a {
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        /* Main content styles */
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            padding: 1.5rem;
+        }
+
+        .image {
+            width: 100%;
+            height: auto;
+        }
+
+        .text-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .title {
+            color: #ffffff;
+            font-family: 'Glass Antiqua', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 400;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        .offer {
+            color: #ffffff;
+            font-family: 'Glass Antiqua', sans-serif;
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        .buy-now {
+            color: #fff;
+            font-family: 'Glass Antiqua', sans-serif;
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 1.2;
+            background-color: #b3261e;
+            padding: 1rem;
+            width: max-content;
+            align-self: flex-start;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .buy-now:hover {
+            background-color: #8e1c18;
+        }
+
+        /* Footer styles */
+        .footer {
+            background-color: #000000;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="landing-page">
+        <header class="header">
+            <nav class="navigation">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="stores.html" class="nav-link">Store</a>
+                <a href="About.html" class="nav-link">About</a>
+                <a href="Contact.html" class="nav-link">Contact</a>
+                <a href="index-New.html" class="nav-link">Update</a>
+            </nav>
+        </header>
+
+        <main class="main-content">
+            <img src="images/image.jpg" alt="Image" class="image">
+            <div class="text-content">
+                <h1 class="title">Welcome to Our Website</h1>
+                <p class="offer">Get 50% off on all products!</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2023 My Website. All rights reserved.</p>
+        </footer>
+    </div>
+    
+</body>
+
+</html>
