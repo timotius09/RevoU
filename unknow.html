@@ -1,108 +1,141 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <style>
-        html {
-            background-color: burlywood;
-        }
-
-        input {
-            width: 210px;
-            height: 56px;
-            margin-top: 122px;
-            margin-left: 12px;
-            padding: 8px 16px;
-            background: transparent;
-            border-radius: 9px;
-            border: 2px solid #fe4567;
-            color: #04f1f1;
-            animation: shake 0.14s 3;
-        }
-
-        @keyframes shake {
-
-            0%,
-            100% {
-                transform: translate(0);
-            }
-
-            25% {
-                transform: translate(8px, 0);
-            }
-
-            75% {
-                transform: translate(-8px, 0);
-            }
-        }
-
-        input:valid {
-            border-color: #45feaf;
-            animation: none;
-        } 
-        section .container,ol {
-            border: 0.4px solid lightgrey;
-            padding: 12px;
-            margin: 12px;
-        }
-#input{
-    border-radius: 5px;
-    padding: 8px 18px;
-    border: 1px solid grey;
+<style>
+*{
+border-radius: 6px;
 }
-#input:hover{
-    background-color: orange;
-}        
-    </style>
+html {
+background-color: #2E3440;
+color: beige;
+}
+#navigasi{
+width: 100%;
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+background-color: #404759;
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+place-content: center;
+content: '';
+}
+ul li{
+list-style: none;
+}
+ul li a{
+color: bisque;
+text-decoration: none;
+}
+input {
+font-size: 1.7rem;
+color: azure;
+width: 210px;
+height: 30px;
+margin-top: 122px;
+margin-left: 12px;
+padding: 8px 10px;
+background: transparent;
+border-radius: 9px;
+border: 2px solid #fe4567;
+animation: shake 0.14s 3;
+}
+@keyframes shake {
+0%,
+100% {
+transform: translate(0);
+}
+25% {
+transform: translate(8px, 0);
+}
+75% {
+transform: translate(-8px, 0);
+}
+}
+input:valid {
+border-color: #404759;
+animation: none;
+}
+section .container,
+ol {
+border: 0.4px solid lightgrey;
+padding: 12px;
+margin: 12px;
+}
+#input {
+border-radius: 5px;
+padding: 8px 18px;
+border: 1px solid grey;
+}
+#input:hover {
+background-color: orange;
+}
+</style>
 </head>
-
 <body>
-    <form action="" method="post">
-        <label for="name">Name</label>
-        <input type="text" name="teks" id="name" required>
-    <button type="submit" value="submit">submits</button>
-    </form>
-    <footer>
-        <section>
-            <main>
-                <header>
-                    <div class="container">
-                    <h3>lorems</h3>
-                    <p id="parafAwal">lorems impsum</p>
-                    <small id="teksAwal">Lorem ipsum dolor sit amet 3213consectetur, adipisicing elit. Deleniti, nostrum! Culpa unde error id fugiat at porro dignissimos quam quibusdam ut fugit velit sunt impedit, sapiente harum ducimus modi cum, 
-                        <span id="deskripsi" class="teksDuaAwal">By, Author</span>
-                    </small>
-                    </div>
-                    <div class="container">
-                     <button  id="input">Submit</button>
-                    </div>
-                </header>
-            </main>
-            <main>
-                <header>
-                    <div class="container">
-                    <h3 class="teksDua">lorems</h3>
-                    <p class="teksDua">lorems impsum</p>
-                    <small class="teksDua"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, nostrum! Culpa unde error 35as14did fugiat at porro dignissimos quam quibusdam ut fugit velit sunt impedit, sapiente harum ducimus modi cum, 
-                        <span class="teksDua">By, Author</span>
-                    </small>
-                    </div>
-                    <div class="container">
-                        <ol>
-                            <li class="list-Item">pertama</li>
-                            <li class="list-Item">kedua</li>
-                            <li class="list-Item">ketiga</li>
-                        </ol>
-                    </div>
-                </header>
-            </main>
-        </section>
-    </footer>
+<header id="navigasi">
+<nav>
+<ul>
+<li><a href="#">navbar-item</a></li>
+<li><a href="#">navbar-item</a></li>
+<li><a href="#">navbar-item</a></li>
+<li><a href="#">navbar-item</a></li>
+</ul>
+</nav>
+</header>
+<section>
+<header>
+<h1><strong>Judul Konten</strong></h1>
+</header>
+<main>
+<form action="" method="post">
+<label for="name">Name</label>
+<input type="text" name="teks" id="name" required>
+<button type="submit" value="submit">submits</button>
+</form>
 
+</main>
+</section>
+<footer>
+<section>
+<main>
+<header>
+<div class="container">
+<h3>lorems</h3>
+<p id="parafAwal">lorems impsum</p>
+<small id="teksAwal">Lorem ipsum dolor sit amet  error id fugiat at porro quam quibusdam ut fugit.
+<span id="deskripsi" class="teksDuaAwal">By, Author</span>
+</small>
+</div>
+<div class="container">
+<button id="input">Submit</button>
+</div>
+</header>
+</main>
+<main>
+<header>
+<div class="container">
+<h3 class="teksDua">lorems</h3>
+<p class="teksDua">lorems impsum</p>
+<small class="teksDua">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, quaerat repellat tempora ut expedita consequatur recusandae corporis.
+<span class="teksDua">By, Author</span>
+</small>
+</div>
+<div class="container">
+<ol>
+<li class="list-Item">pertama</li>
+<li class="list-Item">kedua</li>
+<li class="list-Item">ketiga</li>
+</ol>
+</div>
+</header>
+</main>
+</section>
+</footer>
 <script>
 const ubah = document.getElementById('input');
-
-input.innerHTML='oke';
-    </script>
+input.innerHTML = 'oke';
+</script>
 </body>
 </html>
